@@ -17,4 +17,4 @@ These are much uglier and hard if not impossible to debug, but quite a fun chall
 | Day 6 | 184B | Proud of this mess|
 | Day 7 | 469B | Found out you can bump and next to a number|
 
-[^1]No effort put in, ran through minifier
+[^1]: No effort put in, ran through minifier
