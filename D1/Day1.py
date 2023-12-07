@@ -69,3 +69,4 @@ def part_two_hard():
         print(total)
 
 part_one()
+part_two()
