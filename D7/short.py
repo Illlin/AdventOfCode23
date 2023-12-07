@@ -15,4 +15,4 @@ def a(s):
 		else:p=u
 		o+=[[p+h,b]]
 	o.sort(key=lambda x:x[0]);print(sum([int(c[1])*(i+1)for(i,c)in enumerate(o)]))
-a('J');a('0')
+a('J');a(u)
