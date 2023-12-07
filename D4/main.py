@@ -10,6 +10,13 @@ print(sum([2**(len(set(w)&(set(m)))-1)*(len(set(w)&(set(m)))>0)for w,m in[[y.str
 print(sum([2**(len(set(w)&(set(m)))-1)*(len(set(w)&(set(m)))>0)for w,m in[[y.split()for y in x]for x in[l.strip("\n").split(":")[1].split("|")for l in open("input")]]]))
 print(sum([2**(a-1)*(a>0)for a in[len(set(w)&(set(m)))for w,m in[[y.split()for y in x]for x in[l.strip("\n").split(":")[1].split("|")for l in open("i")]]]]))
 
+print("Smallest")
+print(sum([2**(A-1)*(A>0)for A in[len(set(A)&set(B))for(A,B)in[[A.split()for A in A]for A in[A.strip('\n').split(':')[1].split('|')for A in open('i')]]]]))
+C=len
+A={}
+for(B,D)in enumerate(list(open('input'))):E,F=[set(A.lstrip().split())for A in D.split(':')[1].split('|')];A[B]=list(range(B+1,B+C(E&F)+1))
+for B in A:A[C(A)-B-1]=[A[B]for B in A[C(A)-B-1]]
+print(str(A).count('['))
 
 
 s=str.split;print(sum([2**a*(a>=0)for a in[len(set(w)&set(m))-1 for w,m in[[s(y)for y in x]for x in[s(s(l,":")[1],"|")for l in open("i")]]]]))
@@ -40,6 +47,13 @@ def part_two_r():
     for i in mapping:
         mapping[len(mapping)-i-1] = [mapping[j] for j in mapping[len(mapping)-i-1]]
     print(str(mapping).count("["))
+
+# Part 2 Mini
+C=len
+A={}
+for(B,D)in enumerate(list(open('input'))):E,F=[set(A.lstrip().split())for A in D.split(':')[1].split('|')];A[B]=list(range(B+1,B+C(E&F)+1))
+for B in A:A[C(A)-B-1]=[A[B]for B in A[C(A)-B-1]]
+print(str(A).count('['))
 
 
 part_one()
