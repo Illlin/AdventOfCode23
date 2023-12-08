@@ -9,4 +9,4 @@ for D in L:
 	E=0
 	while D[-1]!='Z':D=B[D][G[E%len(G)]=="L"];E+=1
 	C+=[E]
-print(C[0],A.lcm.reduce(A.array(C)))
+print(C[0],A.lcm.reduce(C))
