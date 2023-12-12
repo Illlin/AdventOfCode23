@@ -1,5 +1,5 @@
 import itertools as I
-a=[[b=='.'for b in a.strip()]for a in[*open(0)]]
+a=[[b=='.'for b in a.strip()]for a in[*open("i")]]
 def s(z):
  r,c=[[1+z*all(b)for b in c]for c in[a,zip(*a)]]
  f=[i for l in a for i in l]
