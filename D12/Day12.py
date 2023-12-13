@@ -26,10 +26,4 @@ def count2(pools, P):
 
 print(sum([(count(po,"^[?.]*"+"[?.]+".join([f"[?#]{{{i}}}" for i in [int(x) for x in pa.split(",")]])+"[?.]*")) for po,pa in [line.split() for line in open("test")]]))
 #print(sum([(count("?".join([po]*5),[int(x) for x in pa.split(",")]*5)) for po,pa in [line.split() for line in open("test")]]))
-total = 0
-for line in open("input"):
-    po,pa = line.split()
-    pa = tuple([int(x) for x in pa.split(",")])*5
-    po = "?".join([po]*5)
-    total += count2(po, pa)
-print(total)
+print([sum(count2("?".join([po]*n), tuple([int(x) for x in pa.split(",")])*n) for po,pa in [line.split() for line in open("i")]) for n in (1,5)])
