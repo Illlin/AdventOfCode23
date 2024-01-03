@@ -26,7 +26,7 @@ while len(to_check):
     if not (all(0 <= pos) and all(pos <= goal)):
         continue
     t = t + map[*pos]
-    if s > 8:
+    if s > 9:
         continue
     if t >= best:
         continue
